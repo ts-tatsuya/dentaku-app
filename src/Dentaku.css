@@ -1,0 +1,99 @@
+:root{
+    --operand-font: 30px;
+    --digits-font: 20px;
+    --button-size: 70px;
+    --digits-box-width: 210px;
+    --button-hover-color: black;
+    --button-hover-text-color: white;
+}
+
+.Dentaku{
+    display: block;
+    background-color: antiquewhite;
+    display: grid;
+    place-items: center;
+}
+.dentakuApp{
+
+    margin-top: 100px;
+}
+
+.valDisplay{
+    display: block;
+    width: 270px;
+    height: 80px;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    text-align: right;
+    padding: 20px;
+    border-radius: 3%;
+    word-wrap: break-word;
+    overflow: scroll;
+}
+
+.valDisplayOperand{
+    display: block;
+    position: relative;
+    width: var(--button-size);
+    height: var(--button-size);
+    background-color: grey;
+    color:white;
+    font-size: 50px;
+    text-align: center;
+    left: 310px;
+    top: 70px;
+}
+
+
+.dentakuApp button{
+    appearance: none;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 16px;
+    cursor: pointer;
+    transition: 0.4s;
+    height: var(--button-size);
+    width: var(--button-size);
+
+}
+
+.dentakuApp button:hover{
+
+    background-color: var(--button-hover-color);
+    color: var(--button-hover-text-color);
+
+}
+
+.utility button{
+
+    font-size: var(--digits-font);
+}
+
+.operator{
+    display: block;
+    position: relative;
+    margin-left: 210px;
+    bottom: 350px;
+}
+
+.operator button{
+    display: block;
+    font-size: var(--operand-font);
+    width: 100px;
+}
+
+.operator .plusButton{
+    height: 140px;
+}
+
+.digits{
+    display: block;
+    width: var(--digits-box-width);
+}
+
+.digits button{
+    position: relative;
+    font-size: var(--digits-font);
+}
